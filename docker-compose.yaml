@@ -1,0 +1,20 @@
+services:  
+  Qwen3-Reranker-0.6B:
+    container_name: Qwen3-Reranker-0.6B
+    restart: no
+    #image: vllm/vllm-openai:v0.9.0.1 #经测试v0.9.0.1也可以正常启动，但为了保持兼容性采用最新版v0.9.1
+    image: vllm/vllm-openai:v0.9.1
+    ipc: host
+    volumes:
+      - ./models:/models
+      - ./model_executor/models/:/usr/local/lib/python3.12/dist-packages/vllm/model_executor/models/
+    command: ['--model', '/models/Qwen3-Reranker-0.6B',  '--served-model-name', 'Qwen3-Reranker-0.6B',  '--gpu-memory-utilization', '0.90']
+    ports:
+      - 8010:8000
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
