@@ -2,7 +2,7 @@
 
  ·本项目旨在解决Qwen3-Reranker-0.6B模型无法通过Vllm平台直接部署的问题。
 
- ·采用vllm最新的开发版制作了镜像dengcao/vllm-openai : v0.9.2-dev，经测试正常，可放心使用。
+ ·采用vllm最新的开发版制作了Docker镜像dengcao/vllm-openai : v0.9.2-dev，经测试正常，可放心使用。
  
  ·修复了Qwen3-Reranker-0.6B排序结果可能不准确的问题。
  
