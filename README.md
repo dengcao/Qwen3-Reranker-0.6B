@@ -1,3 +1,10 @@
+# 2025年7月8日 更新说明
+
+使用了Vllm最新的包（[v0.9.2rc2](https://github.com/vllm-project/vllm/releases/tag/v0.9.2rc2)）更新了Docker镜像：[dengcao/vllm-openai: v0.9.2rc2](https://hub.docker.com/r/dengcao/vllm-openai/tags)。
+
+**更新方法：** 1、重新下载docker-compose.yaml文件覆盖旧文件。2、删除对应容器后，cd切换到项目根目录，重新执行：docker compose up -d
+
+
 # 2025年6月26日 更新说明
 
  ·本项目旨在解决Qwen3-Reranker-0.6B模型无法通过Vllm平台直接部署的问题。
