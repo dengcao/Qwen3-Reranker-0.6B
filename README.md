@@ -1,4 +1,4 @@
-# 2025年7月8日 更新说明
+# 2025年7月7日 更新说明
 
 使用了Vllm最新的包（[v0.9.2rc2](https://github.com/vllm-project/vllm/releases/tag/v0.9.2rc2)）更新了Docker镜像：[dengcao/vllm-openai: v0.9.2rc2](https://hub.docker.com/r/dengcao/vllm-openai/tags)。
 
