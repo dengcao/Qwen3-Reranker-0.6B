@@ -3,7 +3,8 @@ services:
     container_name: Qwen3-Reranker-0.6B
     restart: no
     #image: dengcao/vllm-openai:v0.9.2-dev #采用vllm最新的开发版制作的镜像，经在NVIDIA RTX3060平台主机上测试正常，可放心使用。
-    image: dengcao/vllm-openai:v0.9.2rc2
+    #image: dengcao/vllm-openai:v0.9.2rc2
+    image: dengcao/vllm-openai:v0.9.2
     ipc: host
     volumes:
       - ./models:/models
