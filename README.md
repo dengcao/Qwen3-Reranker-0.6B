@@ -1,3 +1,9 @@
+# 2025年7月8日 更新说明
+
+替换并更新成Vllm官方的最新镜像：[dengcao/vllm-openai: v0.9.2](https://hub.docker.com/r/dengcao/vllm-openai/tags)。此镜像与vllm官方保持一致，可放心使用。
+
+**更新方法：** 1、重新下载docker-compose.yaml文件覆盖旧文件。2、删除对应容器后，cd切换到项目根目录，重新执行：docker compose up -d
+
 # 2025年7月7日 更新说明
 
 使用了Vllm最新的包（[v0.9.2rc2](https://github.com/vllm-project/vllm/releases/tag/v0.9.2rc2)）更新了Docker镜像：[dengcao/vllm-openai: v0.9.2rc2](https://hub.docker.com/r/dengcao/vllm-openai/tags)。
